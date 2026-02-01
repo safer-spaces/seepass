@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Required for monorepo workspace packages to be compiled during Next.js build
+  transpilePackages: ["@repo/design-system"],
   experimental: {
     optimizePackageImports: [
       // Icon library - loads 1,500+ modules without optimization
