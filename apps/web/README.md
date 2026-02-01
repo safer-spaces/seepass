@@ -47,6 +47,15 @@ Next.js app for the Seepass AI Product Assistant: dashboard, signals, and assist
 | `pnpm db:seed` | Seed Convex `patternRecords` if empty |
 | `pnpm db:seed:replace` | Replace `patternRecords` from `convex/seed-data.json` |
 
+## Deploy (Vercel)
+
+This app lives in a Turborepo monorepo and depends on `@repo/design-system`. In Vercel:
+
+* **Root Directory**: `apps/web`
+* **Build**: Handled by `vercel.json` — runs Convex deploy with `turbo run build --filter=assistant-ui-starter` from the monorepo root so the design-system package is built first.
+
+Install is auto-detected; ensure the repo root contains `pnpm-workspace.yaml` and `turbo.json`.
+
 ## Structure
 
 * `app/(protected)/` — Dashboard, Signals, Assistant (Discover, Workshop), auth-gated layout
