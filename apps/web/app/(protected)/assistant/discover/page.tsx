@@ -2,11 +2,11 @@
 
 import { useAuthStore } from "@/features/auth";
 import {
-  ProblemDiscoveryAssistant,
-  clearDiscoveryChat,
+    ProblemDiscoveryAssistant,
+    clearDiscoveryChat,
 } from "@/features/problems";
 import { Button } from "@/shared/components/ui/button";
-import { ArrowRight, RotateCcw, MessageSquare } from "lucide-react";
+import { ArrowRight, MessageSquare, RotateCcw } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";

@@ -4,12 +4,12 @@ import { Button } from "@/shared/components/ui/button";
 import { cn } from "@/shared/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  Brain,
-  Minus,
-  Plus,
-  RotateCcw,
-  StickyNote as StickyNoteIcon,
-  X,
+    Brain,
+    Minus,
+    Plus,
+    RotateCcw,
+    StickyNote as StickyNoteIcon,
+    X,
 } from "lucide-react";
 import * as React from "react";
 import type { Problem } from "../types";
