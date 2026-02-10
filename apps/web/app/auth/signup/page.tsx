@@ -26,7 +26,7 @@ import {
   Users,
 } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const ROLE_OPTIONS = [
   { value: "Product Manager", label: "Product Manager" },

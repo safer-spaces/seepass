@@ -1,5 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "convex deploy --cmd 'pnpm run build' && pnpm run db:seed",
+  "buildCommand": "pnpm --filter @repo/design-system build && convex deploy --cmd 'pnpm run build' && pnpm run db:seed",
   "framework": "nextjs"
 }
